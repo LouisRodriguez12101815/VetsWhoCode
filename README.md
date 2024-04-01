@@ -1,2 +1,2 @@
 # VetsWhoCode
-pre-word for VetsWhoCode Program
+pre-work for VetsWhoCode Program
