@@ -3,21 +3,35 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #f1efef;
+    background-color: #cdbdfa;
+    text-align: center;/* Center text */
 }
 
 header, section, footer {
-    padding: 20px;
-    margin: 10px;
-    background: white;
-    border-radius: 8px;
+    padding: 60px;
+    margin: 50px;
+    background-image: url('https://www.myfreetextures.com/wp-content/uploads/2014/11/Rich-Blue-Abstract-Background.jpg')
+}
+
+#about {
+    background-image: url('https://wonderfulengineering.com/wp-content/uploads/2014/09/yellow-wallpaper-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:black;
+    
+}
+
+#about h1 {
+    color: black;
 }
 
 h1, h2 {
-    color: #333;
+    color: #efeef3;
 }
 
+
+
 a {
-    color: #0077cc;
+    color: #f0f4f7;
 }
