@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Introduction Page</title>
     <link rel="stylesheet" href="boilerplate.css">
+    <script src="boilerplate.js"></script>
 </head>
 <body>
     <header>
-        <h1>Louis Rodriguez</h1>
+        <h1>Vets Who Code</h1>
+        <div id="greeting">
+        </div>
         <p>Hi, I'm Louis!</p>
+        
+        
     </header>
     <section id="about">
         <h2></h2>
-            <div>Started with tech about two years ago after being in the military and driving a truck.</div>
+            <div>Started with tech about two years ago.</div><div> I completed an 8yr contact with the Army Reserve</div>
+            <div>Got interested in going back to school after driving commercial trucks for a while.</div>
+            <div>My goal is to grow in tech.</div>
             <div>This is my first exposure to JS and previously have created raspberry pi startup scripts and python code to parse .csv files into a db.</div>
             <a href="https://github.com/LouisRodriguez12101815" target="_blank">
                 <img src="https://th.bing.com/th/id/OIP.KC2Yfnfwlw1DSWiBMMIwEAHaHa?rs=1&pid=ImgDetMain" alt="GitHub" width="50" height="50">
@@ -36,5 +43,23 @@
                 .catch(error => console.error('Error fetching IP:', error));
             </script>  
     </section>
+    
 </body>
 </html>
+
+<div id="bottom"></div>
+<script>
+    // Create an observer instance
+    var observer = new IntersectionObserver(function(entries) {
+        // If the bottom element is visible in the viewport, show the popup
+        if (entries[0].isIntersecting) {
+            window.open('https://i.imgflip.com/541qur.jpg', '_blank');
+        }
+    }, { threshold: 1.0 });  // 1.0 means that 100% of the element is visible
+    
+    // Select the element you want to observe
+    var bottomElement = document.getElementById('bottom');
+    
+    // Start observing the element
+    observer.observe(bottomElement);
+    </script>
