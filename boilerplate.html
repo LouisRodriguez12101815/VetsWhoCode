@@ -12,20 +12,29 @@
         <p>Hi, I'm Louis!</p>
     </header>
     <section id="about">
-        <h2>About Me</h2>
-        <p>
-        <div>Started with tech about two years ago after being in the military and driving a truck.</div>
-        <div>This is my first exposure to JS and previously have created raspberry pi startup scripts and python code to parse .csv files into a db.</div>
-        </p>
-    </section>
+        <h2></h2>
+            <div>Started with tech about two years ago after being in the military and driving a truck.</div>
+            <div>This is my first exposure to JS and previously have created raspberry pi startup scripts and python code to parse .csv files into a db.</div>
+            <a href="https://github.com/LouisRodriguez12101815" target="_blank">
+                <img src="https://th.bing.com/th/id/OIP.KC2Yfnfwlw1DSWiBMMIwEAHaHa?rs=1&pid=ImgDetMain" alt="GitHub" width="50" height="50">
+            </a>
+            <a href="www.linkedin.com/in/louis-rodriguez-cloud-it" target="_blank">
+                <img src="http://www.anotherstreasure.org/Button_LinkedIn_Purple_Trans.png" alt="LinkedIn" width="50" height="50">
+            </a>
+        </section>
     </section>
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:louis.rodriguez006@mymdc.net">louis.rodriguez006@mymdc.net</a></p>
+        <script>
+            fetch('https://api64.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Visitor IP Address:', data.ip);
+                    // You can also send this data to your server or use it as needed
+                })
+                .catch(error => console.error('Error fetching IP:', error));
+            </script>  
     </section>
-    <footer>
-        <p>Thank you for visiting!</p>
-    </footer>
-    <script src="script.js"></script>
 </body>
 </html>
